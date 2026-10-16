@@ -1,0 +1,1323 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5fff7;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 50px;
+
+    background-color: white;
+}
+
+
+nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #333;
+}
+
+
+/* Main Section */
+
+.hero {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background-color: #e8f8ec;
+}
+
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+}
+
+
+button {
+    padding: 12px 25px;
+
+    margin: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2e8b57;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Feature Cards */
+
+.features {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 60px 30px;
+}
+
+
+.card {
+    background-color: white;
+
+    width: 250px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.card h2 {
+    font-size: 40px;
+}
+
+
+.card p {
+    color: #666;
+}
+
+
+
+
+/* Food Page */
+
+.food-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+
+.food-header h1 {
+    font-size: 40px;
+}
+
+
+.food-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+
+.food-card {
+    background-color: white;
+
+    width: 280px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.food-card h2 {
+    margin-top: 0;
+}
+
+
+.food-card p {
+    color: #555;
+}
+
+
+.available {
+    color: green !important;
+    font-weight: bold;
+}
+
+
+
+
+/* Post Food Page */
+
+.form-header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+
+.form-header h1 {
+    font-size: 40px;
+}
+
+
+.form-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+
+.food-form {
+    width: 500px;
+    max-width: 90%;
+
+    margin: 20px auto 60px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.food-form label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+.food-form input,
+.food-form select,
+.food-form textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+.food-form textarea {
+
+    height: 100px;
+
+    resize: none;
+}
+
+
+.food-form button {
+
+    width: 100%;
+
+    margin-top: 25px;
+}
+
+
+
+/* Dashboard */
+
+.dashboard-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 40px;
+}
+
+.dashboard-header p {
+    color: #666;
+}
+
+
+/* Statistics */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: white;
+    width: 180px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+
+/* Dashboard Actions */
+
+.dashboard-actions {
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Recent Posts */
+
+.recent-posts {
+    width: 700px;
+    max-width: 90%;
+    margin: 20px auto 60px;
+}
+
+.post-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    padding: 18px;
+
+    margin: 10px 0;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+.status-claimed {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-available {
+    color: green;
+    font-weight: bold;
+}
+
+.status-expired {
+    color: red;
+    font-weight: bold;
+}
+/* Food Details Popup */
+
+.food-modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-content h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+#modal-details p {
+    margin: 10px 0;
+    color: #333;
+}
+/* Food Status Colors */
+
+.status-available {
+    color: green;
+    font-weight: bold;
+}
+
+.status-claimed {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-expired {
+    color: red;
+    font-weight: bold;
+}
+/* Modern Design Update */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1faf3;
+    color: #243b2a;
+}
+
+/* Navigation */
+
+nav {
+    background: white;
+    padding: 18px 50px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+nav h2 {
+    color: #237a45;
+}
+
+nav a {
+    color: #2d4a35;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2e8b57;
+}
+
+/* Modern Buttons */
+
+button {
+    background: linear-gradient(135deg, #2e8b57, #237a45);
+    border-radius: 25px;
+    padding: 13px 28px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 139, 87, 0.3);
+}
+/* Modern Food Cards */
+
+.food-card {
+    border: 1px solid #e0f0e4;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(46, 139, 87, 0.2);
+}
+
+.food-card h2 {
+    color: #237a45;
+    font-size: 22px;
+}
+
+.food-card p {
+    line-height: 1.6;
+}
+
+/* Modern Stat Cards */
+
+.stat-card {
+    border: 1px solid #e0f0e4;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h2 {
+    color: #237a45;
+}
+/* Modern Homepage Hero */
+
+.hero {
+    background: linear-gradient(135deg, #e8f8ec, #d0f0d9);
+    border-radius: 0 0 30px 30px;
+}
+
+.hero h1 {
+    color: #1f6339;
+    font-weight: bold;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+/* =================================
+   MODERN HOMEPAGE DESIGN
+   ================================= */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4faf5;
+    color: #243b2a;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+nav h2 {
+    color: #237a45;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #294b35;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2e8b57;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #e8f8ec, #d3f0dc);
+    border-radius: 0 0 35px 35px;
+    min-height: 380px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: white;
+    color: #237a45;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 25px 0 18px;
+    color: #1f6339;
+}
+
+.hero h1 span {
+    color: #2e8b57;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #496451;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: linear-gradient(135deg, #2e8b57, #237a45);
+    color: white;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(46, 139, 87, 0.3);
+}
+
+.secondary-btn {
+    background: white;
+    color: #237a45;
+    border: 2px solid #2e8b57;
+}
+
+/* Hero Visual */
+.hero-visual {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(46, 139, 87, 0.12);
+    min-width: 200px;
+}
+
+.food-illustration {
+    font-size: 100px;
+}
+
+.hero-visual h3 {
+    color: #237a45;
+    margin-bottom: 8px;
+}
+
+.hero-visual p {
+    font-size: 14px;
+}
+
+/* Features Section */
+.features-section {
+    padding: 70px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading span {
+    color: #2e8b57;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #1f6339;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #647568;
+}
+
+/* Feature Cards */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #e0f0e4;
+    box-shadow: 0 5px 20px rgba(46, 139, 87, 0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(46, 139, 87, 0.15);
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #237a45;
+    font-size: 20px;
+}
+
+.card p {
+    color: #647568;
+    line-height: 1.6;
+}
+
+/* Call To Action */
+.cta-section {
+    text-align: center;
+    margin: 20px 8% 60px;
+    padding: 55px 20px;
+    background: #237a45;
+    color: white;
+    border-radius: 30px;
+}
+
+.cta-section h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.cta-section p {
+    margin-bottom: 25px;
+}
+
+.cta-section button {
+    background: white;
+    color: #237a45;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    color: #647568;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 25px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        min-width: auto;
+        width: 70%;
+    }
+
+    .features-section {
+        padding: 50px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .cta-section {
+        margin: 20px;
+    }
+}
+
+/* =================================
+   FIND FOOD PAGE DESIGN
+   ================================= */
+
+/* Food Header */
+.food-header {
+    text-align: center;
+    padding: 60px 20px 35px;
+    background: linear-gradient(135deg, #e8f8ec, #d3f0dc);
+}
+
+.food-header h1 {
+    font-size: 40px;
+    color: #1f6339;
+    margin: 20px 0 12px;
+}
+
+.food-header p {
+    color: #496451;
+    font-size: 17px;
+}
+
+/* Search Section */
+.food-search-section {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.food-search-section h2 {
+    color: #237a45;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.food-search-section p {
+    color: #647568;
+}
+
+/* Search Input */
+#search-food {
+    display: block;
+    width: 80%;
+    max-width: 550px;
+    margin: 25px auto;
+    padding: 16px 22px;
+    border: 2px solid #d5e9da;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+    transition: 0.3s;
+}
+
+#search-food:focus {
+    border-color: #2e8b57;
+    box-shadow: 0 0 10px rgba(46, 139, 87, 0.15);
+}
+
+/* Food Container */
+.food-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px 7% 60px;
+}
+
+/* Food Cards */
+.food-container .food-card {
+    background: white;
+    width: 270px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #e0f0e4;
+    box-shadow: 0 5px 20px rgba(46, 139, 87, 0.07);
+    transition: 0.3s;
+}
+
+.food-container .food-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(46, 139, 87, 0.16);
+}
+
+.food-container .food-card h2 {
+    color: #237a45;
+    margin-bottom: 15px;
+}
+
+.food-container .food-card p {
+    color: #647568;
+    line-height: 1.6;
+}
+
+/* Food Status */
+.food-container .status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Modal Design */
+.food-modal {
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    border-radius: 25px;
+    border: 1px solid #dcefe1;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.close-btn {
+    color: #237a45;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #d9534f;
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+
+    .food-header h1 {
+        font-size: 32px;
+    }
+
+    .food-container {
+        padding: 20px;
+    }
+
+    .food-container .food-card {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    #search-food {
+        width: 75%;
+    }
+}
+
+/* =================================
+   POST FOOD PAGE DESIGN
+   ================================= */
+
+/* Form Header */
+.form-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #e8f8ec, #d3f0dc);
+}
+
+.form-header h1 {
+    font-size: 40px;
+    color: #1f6339;
+    margin: 20px 0 12px;
+}
+
+.form-header p {
+    font-size: 17px;
+    color: #496451;
+    line-height: 1.6;
+}
+
+/* Form Container */
+.food-form {
+    background: white;
+    width: 85%;
+    max-width: 600px;
+    margin: 45px auto 70px;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid #e0f0e4;
+    box-shadow: 0 8px 30px rgba(46, 139, 87, 0.08);
+}
+
+/* Form Title */
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-title h2 {
+    color: #237a45;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.form-title p {
+    color: #647568;
+    line-height: 1.5;
+}
+
+/* Form Labels */
+.food-form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #294b35;
+    font-weight: bold;
+}
+
+/* Form Inputs */
+.food-form input,
+.food-form select,
+.food-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5e9da;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background: #fafffb;
+    outline: none;
+    transition: 0.3s;
+}
+
+.food-form input:focus,
+.food-form select:focus,
+.food-form textarea:focus {
+    border-color: #2e8b57;
+    box-shadow: 0 0 8px rgba(46, 139, 87, 0.15);
+}
+
+/* Description */
+.food-form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.food-form button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+
+    .form-header h1 {
+        font-size: 32px;
+    }
+
+    .food-form {
+        width: 80%;
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+}
+
+/* =================================
+   LOGIN PAGE DESIGN
+   ================================= */
+
+.form-header .hero-badge {
+    margin-bottom: 5px;
+}
+
+.food-form form button {
+    cursor: pointer;
+}
+
+.food-form a {
+    transition: 0.3s;
+}
+
+.food-form a:hover {
+    color: #1f6339 !important;
+    text-decoration: underline;
+}
+
+/* Login Form Spacing */
+.food-form input[type="email"],
+.food-form input[type="password"] {
+    letter-spacing: 0.3px;
+}
+
+/* Responsive Login Design */
+@media (max-width: 768px) {
+
+    .form-header {
+        padding: 45px 20px 30px;
+    }
+
+    .food-form {
+        margin-bottom: 45px;
+    }
+
+}
+
+/* =================================
+   REGISTER PAGE DESIGN
+   ================================= */
+
+.form-header {
+    border-radius: 0 0 30px 30px;
+}
+
+.food-form select {
+    cursor: pointer;
+}
+
+.food-form button {
+    margin-top: 30px;
+}
+
+/* Register Form Visual Enhancement */
+.food-form input::placeholder {
+    color: #9aaa9e;
+}
+
+/* Mobile Register Design */
+@media (max-width: 768px) {
+
+    .form-header p {
+        font-size: 15px;
+    }
+
+    .food-form {
+        padding: 25px;
+    }
+
+}
+
+/* =================================
+   DASHBOARD PAGE DESIGN
+   ================================= */
+
+/* Dashboard Header */
+.dashboard-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #e8f8ec, #d3f0dc);
+    border-radius: 0 0 30px 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 40px;
+    color: #1f6339;
+    margin: 20px 0 12px;
+}
+
+.dashboard-header p {
+    color: #496451;
+    font-size: 17px;
+}
+
+/* Statistics */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 45px 7% 25px;
+}
+
+.stat-card {
+    background: white;
+    width: 180px;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #e0f0e4;
+    box-shadow: 0 5px 20px rgba(46, 139, 87, 0.07);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(46, 139, 87, 0.15);
+}
+
+.stat-icon {
+    font-size: 35px;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    color: #237a45;
+    margin: 12px 0 5px;
+}
+
+.stat-card p {
+    color: #647568;
+    font-weight: bold;
+}
+
+/* Dashboard Actions */
+.dashboard-actions {
+    text-align: center;
+    padding: 35px 20px 45px;
+}
+
+.dashboard-actions h2 {
+    color: #237a45;
+    font-size: 28px;
+}
+
+.dashboard-actions p {
+    color: #647568;
+}
+
+.dashboard-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.dashboard-buttons a {
+    text-decoration: none;
+}
+
+/* Recent Posts */
+.recent-posts {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto 65px;
+    padding: 35px;
+    background: white;
+    border-radius: 25px;
+    border: 1px solid #e0f0e4;
+    box-shadow: 0 5px 20px rgba(46, 139, 87, 0.06);
+}
+
+.recent-posts h2 {
+    text-align: center;
+    color: #237a45;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Mobile Design */
+@media (max-width: 768px) {
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+
+    .stat-card {
+        width: 130px;
+    }
+
+    .recent-posts {
+        width: 75%;
+        padding: 25px;
+    }
+
+}
+/* Food Status Colors */
+
+.status-available {
+    color: green;
+    font-weight: bold;
+}
+
+.status-expired {
+    color: red;
+    font-weight: bold;
+}
+
+.status-claimed {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Status Buttons */
+
+.expired-button {
+    background-color: #ccc;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.claimed-button {
+    background-color: #ffd580;
+    color: #744500;
+    cursor: not-allowed;
+}
+/* Clear Food Status Styling */
+
+.food-card .status-available {
+    color: #16803c !important;
+    font-weight: bold;
+}
+
+.food-card .status-expired {
+    color: #dc2626 !important;
+    font-weight: bold;
+}
+
+.food-card .status-claimed {
+    color: #d97706 !important;
+    font-weight: bold;
+}
+
+/* Expired Button */
+
+.food-card button.expired-button {
+    background-color: #e5e7eb !important;
+    color: #374151 !important;
+    cursor: not-allowed;
+}
+
+/* Claimed Button */
+
+.food-card button.claimed-button {
+    background-color: #fbbf24 !important;
+    color: #78350f !important;
+    cursor: not-allowed;
+}
+.food-form input,
+.food-form select,
+.food-form textarea {
+    color: #333 !important;
+    background-color: #fff !important;
+}
+.food-form input::placeholder,
+.food-form textarea::placeholder {
+    color: #777 !important;
+}
+.dashboard-card h2 {
+    color: #1f2937 !important;
+}
